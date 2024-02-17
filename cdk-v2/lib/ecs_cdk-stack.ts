@@ -102,7 +102,9 @@ export class EcsCdkStack extends cdk.Stack {
       taskDefinition: taskDef,
       publicLoadBalancer: true,
       desiredCount: 1,
-      listenerPort: 80
+      listenerPort: 80,
+      assign_public_ip: true,
+      certificate: 'certArn'
     });
 
 
